@@ -1,0 +1,249 @@
+.MAINCONTENT-BOX{
+    margin-left: 250px;
+    padding: 0;
+    height: 750px;
+    width: 82.6vw;
+    background-color: white;
+    
+}
+.Search-bar{
+    margin-top: -8px;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Search-bar .Bisearcbar{
+    height: 75px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Search-box{
+    height: 35px;
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid grey;    
+}
+
+
+
+.Heading{
+    font-size: 30px;
+    color: grey;
+    margin-left: 30px;
+}
+.POS-box{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.POS-box .BiPOS-box{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.NS-box{
+    height: 200px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.New-order{
+    height: 40px;
+    width: 30vw;
+    background-color: #32BDEA;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.New-order span{
+    color: white;
+    font-size: 18px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.Settle-order{
+    height: 40px;
+    width: 30vw;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.Settle-order span{
+    font-size: 18px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.Order-box{
+    height: 200px;
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.Preparing-box{
+    height: 200px;
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.Pending-box{
+    height: 200px;
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.box{
+    height: 100px;
+    width: 14vw;
+    color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:  1px solid grey;
+    border-radius: 10px;
+}
+.Orders-heading{
+    font-size: 30px;
+    color: grey;
+    margin-left: 30px;
+}
+.Boxfor-cards{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Boxfor-cards .Biboxfor-cards{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/* Cards From Here . . . .*/
+.Biboxfor-cards .orders-card {
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.orders-card .Biorders-card{
+    height: 200px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.status-boxes{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.status-boxes .first-box{
+    height: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(108, 108, 108);
+}
+.first-box .User-box{
+    color: rgb(250, 174, 187);
+    font-weight: bold;
+    font-size: 20px;
+}
+.first-box .Takeaway-box{
+    font-weight: bold;
+    font-size: 20px;
+}
+.first-box .View-btn{
+    height: 25px;
+    width: 100px;
+    color: #32BDEA;
+    background-color: white;
+    border: 2px solid #32BDEA;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.first-box .Settlebill-btn{
+    height: 25px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.first-box .Printbill-btn{
+    height: 25px;
+    width: 100px;
+    color: white;
+    background-color: #FF7E41;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.Space-box{
+    height: 30px;
+    width: 100%;
+}
+/* Terms And Conditions Div */
+.Termsandcondition{
+    height: 90px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Termsandcondition .Bitermsbox{
+    height: 80px;
+    width: 95%;
+    border-radius: 5px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Bitermsbox .agreement{
+    color: grey;
+    cursor: pointer;
+}
