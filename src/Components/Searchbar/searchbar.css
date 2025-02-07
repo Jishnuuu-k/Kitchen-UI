@@ -1,0 +1,27 @@
+.Search-bar {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+}
+
+.Search-bar .Bisearcbar {
+    height: 75px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Search-box {
+    height: 35px;
+    width: 350px; 
+    border-radius: 10px;
+    border: 1px solid grey;
+}

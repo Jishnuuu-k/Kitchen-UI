@@ -4,23 +4,36 @@ import { BsArrowsAngleContract, BsPeople } from "react-icons/bs";
 import { TbCategory, TbReport, TbCube } from "react-icons/tb";
 import { FiShoppingCart, FiPieChart } from "react-icons/fi";
 import { VscCoffee } from "react-icons/vsc";
+import { IoArrowRedoOutline } from "react-icons/io5";
+
 import "./sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = ({ onToggle }) => {
   const [isOpen, setIsOpen] = useState(true);
+  const [foodMenuOpen, setFoodMenuOpen] = useState(false);
 
   const toggleSidebar = () => {
+    const newWidth = isOpen ? 50 : 250;
     setIsOpen(!isOpen);
+    onToggle(newWidth);
+  };
+
+  const toggleFoodMenu = () => {
+    setFoodMenuOpen(!foodMenuOpen);
   };
 
   return (
     <div className={`sidebar ${isOpen ? "open" : "closed"}`}>
       <div className="top-section">
-        <div className="logo-container">
-          <VscCoffee className="Cup-icon" />{isOpen && <span className="logo">CoffyByte</span>}
-        </div>
+        {isOpen && (
+          <div className="logo-container">
+            <VscCoffee className="Cup-icon" />
+            <span className="logo">CoffyByte</span>
+          </div>
+        )}
         <FaBars className="menu-icon" onClick={toggleSidebar} />
       </div>
+
       <div className="menu">
         <div className="menu-options">
           <TbCube className="icon" />
@@ -34,10 +47,24 @@ const Sidebar = () => {
           <FiPieChart className="icon" />
           {isOpen && <span>POS</span>}
         </div>
-        <div className="menu-options">
+
+        {/* Food Menu with Smooth Drop-down */}
+        <div className="menu-options" onClick={toggleFoodMenu}>
           <FiShoppingCart className="icon" />
           {isOpen && <span>Food Menu</span>}
+          {isOpen && <IoArrowRedoOutline className={`arrow-icon ${foodMenuOpen ? "rotated" : ""}`} />}
         </div>
+        <div className={`submenu ${foodMenuOpen ? "open" : ""}`}>
+          {isOpen && (
+            <>
+              <div className="submenu-option">List Menu</div>
+              <div className="submenu-option">Add Menu</div>
+              <div className="submenu-option">List Add-Ons</div>
+              <div className="submenu-option">Add Add-Ons</div>
+            </>
+          )}
+        </div>
+
         <div className="menu-options">
           <TbCategory className="icon" />
           {isOpen && <span>Food Categories</span>}

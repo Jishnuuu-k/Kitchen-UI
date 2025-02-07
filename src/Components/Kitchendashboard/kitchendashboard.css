@@ -1,0 +1,128 @@
+.MAINCONTENTFORKITCHEN-BOX{
+    margin-left: 250px;
+    padding: 0;
+    height: 750px;
+    width: 82vw;
+    transition: width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.Bimaincontent-box{
+    margin-top: 80px;
+    height: auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.Kitchen-card{
+    height: 250px;
+    width: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+.Kitchen-card .Bikitchen-card{
+    height: 200px;
+    width: 500px;
+}
+.Bikitchen-card .Firstbox-incard{
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.Firstbox-incard .Bifirstbox-incard{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Bifirstbox-incard .Box-first{
+    height: 40px;
+    width: 230px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Box-first .Progrees-btn{
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #32BDEA;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Box-first .Orderconfirm-btn{
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Box-first .Completed-btn{
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #78C091;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Box-first .Printreciept-btn{
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #FF7E41;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.Bikitchen-card .Secondbox-incard{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Secondbox-incard .Bisecondbox-incard{
+    height: 40px;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.status{
+    font-size: 18px;
+}
+.Order-count{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+}
+.Statusicon{
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: green;
+    background-color: rgb(212, 238, 212);
+    font-weight: bold;
+    border-radius: 10px;
+}

@@ -1,15 +1,22 @@
-import React from 'react'
-import Sidebar from './Components/Sidebar/Sidebar'
-import Banner from './Components/Banner/Banner'
-import Kitchendashboard from './Components/Kitchendashboard/Kitchendashboard'
-function App() {
-  return (
-    <div>
-      <Sidebar/>
-      {/* <Banner/> */}
-      <Kitchendashboard/>
-    </div>
-  )
-}
+import React, { useState } from "react";
+import Sidebar from "./Components/Sidebar/Sidebar"
+import Searchbar from "./Components/Searchbar/Searchbar"
+import Banner from "./Components/Banner/Banner"
+import Kitchendashboard from "./Components/Kitchendashboard/Kitchendashboard"
+import Listmenu from "./Components/Listmenu/Listmenu"
 
-export default App
+const Layout = () => {
+  const [sidebarWidth, setSidebarWidth] = useState(250);
+
+  return (
+    <div className="layout-container">
+      <Sidebar onToggle={setSidebarWidth} />
+      <Searchbar sidebarWidth={sidebarWidth} />
+      {/* <Kitchendashboard sidebarWidth={sidebarWidth} /> */}
+      {/* <Banner sidebarWidth={sidebarWidth} /> */}
+      <Listmenu/>
+    </div>
+  );
+};
+
+export default Layout;

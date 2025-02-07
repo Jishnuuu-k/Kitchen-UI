@@ -2,23 +2,19 @@ import React from 'react'
 import { FaPlus } from "react-icons/fa6";
 import { TbReportSearch } from "react-icons/tb";
 import './banner.css'
-function Banner() {
+function Banner({ sidebarWidth }) {
   return (
-    <div className="MAINCONTENT-BOX">
-      <div className="Search-bar">
-        <div className="Bisearcbar">
-          
-        < input type="text"  placeholder=' Search Here' className='Search-box' />
-        </div>
-      </div>
+    <div className="MAINCONTENT-BOX" style={{ marginLeft: sidebarWidth }}>
       <div className="Space-box"></div>
       <div className="Space-box"></div>
       <h2 className='Heading'>CoffyByte-POS</h2>
       <div className="POS-box">
         <div className="BiPOS-box">
           <div className="NS-box">
-            <div className="New-order"><span><FaPlus/>New Order</span> </div>
-            <div className="Settle-order"><span><TbReportSearch/>Settle Order</span></div>
+            <div className="Binsbox">
+              <div className="New-order"><span><FaPlus/>New Order</span> </div>
+              <div className="Settle-order"><span><TbReportSearch/>Settle Order</span></div>
+            </div>
           </div>
             
           <div className="Order-box">
