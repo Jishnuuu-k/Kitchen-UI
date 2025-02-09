@@ -1,22 +1,21 @@
-import React, { useState } from "react";
-import Sidebar from "./Components/Sidebar/Sidebar"
-import Searchbar from "./Components/Searchbar/Searchbar"
-import Banner from "./Components/Banner/Banner"
-import Kitchendashboard from "./Components/Kitchendashboard/Kitchendashboard"
-import Listmenu from "./Components/Listmenu/Listmenu"
+import React from 'react'
+import {Routes, Route } from 'react-router-dom';
+import Bannerr from './Pages/Bannerr'
+import Kitchendashboardd from './Pages/Kitchendashboardd'
+import Listmenuu from './Pages/Listmenuu';
+import Addmenuu from './Pages/Addmenuu';
 
-const Layout = () => {
-  const [sidebarWidth, setSidebarWidth] = useState(250);
-
+function App() {
   return (
-    <div className="layout-container">
-      <Sidebar onToggle={setSidebarWidth} />
-      <Searchbar sidebarWidth={sidebarWidth} />
-      {/* <Kitchendashboard sidebarWidth={sidebarWidth} /> */}
-      {/* <Banner sidebarWidth={sidebarWidth} /> */}
-      <Listmenu sidebarWidth={sidebarWidth}/>
-    </div>
+    <>
+      <Routes>
+        <Route path="/dashboard" element={ <Bannerr/> } />
+        <Route path="/kitchendashboard" element={ <Kitchendashboardd/> } />
+        <Route path="/listmenu" element={ <Listmenuu/> } />
+        <Route path="/Addmenu" element={ <Addmenuu/> } />
+      </Routes>
+    </>
   );
-};
+}
 
-export default Layout;
+export default App

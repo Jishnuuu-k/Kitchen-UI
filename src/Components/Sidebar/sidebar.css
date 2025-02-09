@@ -74,6 +74,7 @@
   color: grey;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  
 }
 
 .menu-options:hover {
@@ -119,6 +120,7 @@
 
 .sidebar.closed .menu-options span {
   display: none;
+  text-decoration: none;
 }
 
 /* Arrow Icon Rotation */
