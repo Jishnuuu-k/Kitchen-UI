@@ -14,7 +14,7 @@ const Layout = () => {
       <Searchbar sidebarWidth={sidebarWidth} />
       {/* <Kitchendashboard sidebarWidth={sidebarWidth} /> */}
       {/* <Banner sidebarWidth={sidebarWidth} /> */}
-      <Listmenu/>
+      <Listmenu sidebarWidth={sidebarWidth}/>
     </div>
   );
 };
