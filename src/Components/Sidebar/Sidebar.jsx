@@ -42,7 +42,7 @@ const Sidebar = ({ onToggle }) => {
         </div>
         <div className="menu-options">
           <TbCube className="icon" />
-          {isOpen && <span><Link to="/kitchendashboard" style={{ textDecoration: "none", color: "inherit" }}>Kitchen `Dashboard</Link></span>}
+          {isOpen && <span><Link to="/kitchendashboard" style={{ textDecoration: "none", color: "inherit" }}>Kitchen Dashboard</Link></span>}
         </div>
         <div className="menu-options">
           <FiPieChart className="icon" />
