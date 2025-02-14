@@ -46,7 +46,7 @@ const Sidebar = ({ onToggle }) => {
         </div>
         <div className="menu-options">
           <FiPieChart className="icon" />
-          {isOpen && <span><Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>POS</Link></span>}
+          {isOpen && <span><Link to="/pos" style={{ textDecoration: "none", color: "inherit" }}>POS</Link></span>}
         </div>
 
         {/* Food Menu with Smooth Drop-down */}
