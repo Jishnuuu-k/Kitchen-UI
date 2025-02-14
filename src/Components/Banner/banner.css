@@ -2,7 +2,7 @@
     margin-left: 250px;
     padding: 0;
     height: 750px;
-    width: 82.6vw;
+    width: 82vw;
     background-color: white;
     transition: width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
 }

@@ -80,7 +80,7 @@ const Sidebar = ({ onToggle }) => {
         </div>
         <div className="menu-options">
           <TbReport className="icon" />
-          {isOpen && <span><Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>Reports</Link></span>}
+          {isOpen && <span><Link to="/report" style={{ textDecoration: "none", color: "inherit" }}>Reports</Link></span>}
         </div>
         <div className="menu-options">
           <FaCog className="icon" />
