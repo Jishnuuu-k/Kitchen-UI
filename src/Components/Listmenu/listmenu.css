@@ -17,9 +17,17 @@
     overflow-y: hidden;
     overflow-x: auto;
   }
-  
+  .entries {
+    width: 200px;
+  }
+  .entries label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .entries select {
     padding: 5px;
+    border-radius: 5px;
   }
   
   .add-menu {
@@ -38,7 +46,7 @@
     width: 100%;
     overflow-x: auto;
     border: 1px solid grey;
-    border-radius: 10px;
+    border-radius: 10px
   }
   .menu-table {
     width: 100%;
@@ -47,14 +55,13 @@
   }
   
   .menu-table th{
-    border: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
     padding: 10px;
     text-align: center;
   } 
   .menu-table td {
     padding: 10px;
     text-align: center;
-    border-bottom: 1px solid grey;
   }
   
   .menu-image {

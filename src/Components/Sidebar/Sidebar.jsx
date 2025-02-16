@@ -37,21 +37,23 @@ const Sidebar = ({ onToggle }) => {
 
       <div className="menu">
         <div className="menu-options">
-          <TbCube className="icon" />
+        <Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}><TbCube className="icon" /></Link>
           {isOpen && <span><Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>Dashboard</Link></span>}
         </div>
         <div className="menu-options">
-          <TbCube className="icon" />
+        <Link to="/kitchendashboard" style={{ textDecoration: "none", color: "inherit" }}><TbCube className="icon" /></Link>
           {isOpen && <span><Link to="/kitchendashboard" style={{ textDecoration: "none", color: "inherit" }}>Kitchen Dashboard</Link></span>}
         </div>
         <div className="menu-options">
-          <FiPieChart className="icon" />
+        <Link to="/pos" style={{ textDecoration: "none", color: "inherit" }}><FiPieChart className="icon" /></Link>
+          
           {isOpen && <span><Link to="/pos" style={{ textDecoration: "none", color: "inherit" }}>POS</Link></span>}
         </div>
 
         {/* Food Menu with Smooth Drop-down */}
         <div className="menu-options" onClick={toggleFoodMenu}>
-          <FiShoppingCart className="icon" />
+        <Link to="/listmenu" style={{ textDecoration: "none", color: "inherit" }}><FiShoppingCart className="icon" /></Link>
+          
           {isOpen && <span>Food Menu</span>}
           {isOpen && <IoArrowRedoOutline className={`arrow-icon ${foodMenuOpen ? "rotated" : ""}`} />}
         </div>
@@ -60,30 +62,35 @@ const Sidebar = ({ onToggle }) => {
             <>
               <div className="submenu-option"><Link to="/listmenu" style={{ textDecoration: "none", color: "inherit" }}>List Menu</Link></div>
               <div className="submenu-option"><Link to="/Addmenu" style={{ textDecoration: "none", color: "inherit" }}>Add Menu</Link></div>
-              <div className="submenu-option"><Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>List Add-Ons</Link></div>
+              <div className="submenu-option"><Link to="/listaddons" style={{ textDecoration: "none", color: "inherit" }}>List Add-Ons</Link></div>
               <div className="submenu-option"><Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>Add Add-Ons</Link></div>
             </>
           )}
         </div>
 
         <div className="menu-options">
-          <TbCategory className="icon" />
+        <Link to="/pos" style={{ textDecoration: "none", color: "inherit" }}><TbCategory className="icon" /></Link>
+          
           {isOpen && <span><Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>Food Categories</Link></span>}
         </div>
         <div className="menu-options">
-          <BsArrowsAngleContract className="icon" />
+        <Link to="/pos" style={{ textDecoration: "none", color: "inherit" }}><BsArrowsAngleContract className="icon" /></Link>
+        
           {isOpen && <span><Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>Dine-in-Table</Link></span>}
         </div>
         <div className="menu-options">
-          <BsPeople className="icon" />
+        <Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}><BsPeople className="icon" /></Link>
+          
           {isOpen && <span><Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>People</Link></span>}
         </div>
         <div className="menu-options">
-          <TbReport className="icon" />
+        <Link to="/report" style={{ textDecoration: "none", color: "inherit" }}><TbReport className="icon" /></Link>
+          
           {isOpen && <span><Link to="/report" style={{ textDecoration: "none", color: "inherit" }}>Reports</Link></span>}
         </div>
         <div className="menu-options">
-          <FaCog className="icon" />
+        <Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}><FaCog className="icon" /></Link>
+          
           {isOpen && <span><Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>Settings</Link></span>}
         </div>
       </div>

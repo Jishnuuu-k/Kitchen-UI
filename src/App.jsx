@@ -4,6 +4,7 @@ import Bannerr from './Pages/Bannerr'
 import Kitchendashboardd from './Pages/Kitchendashboardd'
 import Listmenuu from './Pages/Listmenuu';
 import Addmenuu from './Pages/Addmenuu';
+import Listaddonss from './Pages/Listaddonss'
 import Reportt from './Pages/Reportt';
 import Poss from './Pages/Poss';
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/kitchendashboard" element={ <Kitchendashboardd/> } />
         <Route path="/listmenu" element={ <Listmenuu/> } />
         <Route path="/Addmenu" element={ <Addmenuu/> } />
+        <Route path="/listaddons" element={ <Listaddonss/> } />
         <Route path="/report" element={ <Reportt/> } />
         <Route path="/pos" element={ <Poss/> } />
       </Routes>
