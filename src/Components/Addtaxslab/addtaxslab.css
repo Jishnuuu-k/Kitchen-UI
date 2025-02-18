@@ -1,0 +1,84 @@
+.MainContentBoxForTax {
+    margin-left: 250px;
+    padding: 0;
+    height: 750px;
+    width: 82vw;
+    background-color: white;
+    transition: width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+}
+.ContentBoxForTax {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.FormForTax {
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.FormHeadingForTax {
+    height: 90px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.FormHeadingForTax h2 {
+    margin-left: 47px;
+    color: grey;
+}
+.FormDataForTax {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.InnerFormDataForTax {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.InputForTax {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.ButtonContainerForTax {
+    height: 100%;
+    width: 100%;
+}
+.InputForTax label {
+    font-size: 20px;
+}
+.InputForTax .InputBoxForTax {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+.BtnForTaxAdd {
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #32BDEA;
+    color: white;
+    font-size: 15px;
+}
+.BtnForTaxReset {
+    height: 40px;
+    width: 120px;
+    background-color: rgb(246, 131, 150);
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 15px;
+}

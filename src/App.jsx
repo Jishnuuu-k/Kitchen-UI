@@ -15,6 +15,7 @@ import Addtablee from './Pages/Addtablee';
 import Userss from './Pages/Userss';
 import Adduserr from './Pages/Adduserr';
 import Profilee from './Pages/Profilee';
+import Addtaxslabb from './Pages/Addtaxslabb';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/report" element={ <Reportt/> } />
         <Route path="/pos" element={ <Poss/> } />
         <Route path="/profile" element={ <Profilee/> } />
+        <Route path="/addtaxslab" element={ <Addtaxslabb/> } />
       </Routes>
     </>
   );
