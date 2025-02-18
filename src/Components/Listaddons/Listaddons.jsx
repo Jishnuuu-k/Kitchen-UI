@@ -1,5 +1,5 @@
 import React from "react";
-import "./Listaddons.css";
+import "./listaddons.css";
 import { RiDeleteBin6Line,RiEdit2Line } from "react-icons/ri";
 
 function Listaddons({ sidebarWidth }) {

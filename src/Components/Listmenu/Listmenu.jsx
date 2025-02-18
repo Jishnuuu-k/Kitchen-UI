@@ -39,7 +39,7 @@ function ListMenu ({ sidebarWidth }) {
             <tr>
               <td>102</td>
               <td className="menu-item">
-                <img src="/path/to/image1.jpg" alt="ice candy" className="menu-image" />
+                <img src="https://th.bing.com/th/id/OIP.NVXrSOrofUltgDT2Eq0C4QHaHa?rs=1&pid=ImgDetMain" alt="ice candy" className="menu-image" />
                 <span>ice candy</span>
               </td>
               <td>Main Course</td>
@@ -56,7 +56,7 @@ function ListMenu ({ sidebarWidth }) {
             <tr>
               <td>101</td>
               <td className="menu-item">
-                <img src="/path/to/image2.jpg" alt="Buffalo Califlower" className="menu-image" />
+                <img src="https://th.bing.com/th/id/OIP.NVXrSOrofUltgDT2Eq0C4QHaHa?rs=1&pid=ImgDetMain" alt="Buffalo Califlower" className="menu-image" />
                 <span>Buffalo Califlower</span>
               </td>
               <td>Deserts</td>

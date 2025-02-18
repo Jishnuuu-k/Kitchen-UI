@@ -1,0 +1,150 @@
+.Adduser-container {
+    padding: 20px;
+    box-sizing: border-box;
+    transition: width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+}
+
+.add-user-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+.form-section {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+ h3 {
+    color: grey;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-user-btn {
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.add-user-btn:hover {
+    background: #0056b3;
+}
+.profile-upload-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.profile-picture {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px ;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #cccccc;
+}
+
+.placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    width: 400px;
+}
+
+.profile-picture input {
+    margin-top: 10px;
+}
+.Selectbox-user{
+    width: 380px;
+}
+.Selectbox-userr{
+    width: 400px;
+}
+
+
+.Profilepic-user{
+    display: none;
+    
+}
+.custom-file-upload {
+    margin-top: -60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+  }
+  .Bicustom-file-upload{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #32bdea;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .custom-file-upload:hover {
+    transform: scale(1.2);
+    transition: 0.1s;
+  }
+  
+  .custom-file-upload .i {
+    margin-top: -5px;
+    font-size: 30px; 
+    color: white;
+  }

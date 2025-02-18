@@ -87,7 +87,7 @@ const Sidebar = ({ onToggle }) => {
         </div>
 
         <div className="menu-options" onClick={toggleFoodCategory}>
-        <Link to="/listmenu" style={{ textDecoration: "none", color: "inherit" }}><TbCategory className="icon" /></Link>
+        <Link to="/listcategory" style={{ textDecoration: "none", color: "inherit" }}><TbCategory className="icon" /></Link>
           
           {isOpen && <span>FoodCategory</span>}
           {isOpen && <IoArrowRedoOutline className={`arrow-icon ${foodCategoryOpen ? "rotated" : ""}`} />}
@@ -95,8 +95,8 @@ const Sidebar = ({ onToggle }) => {
         <div className={`submenu ${foodCategoryOpen ? "open" : ""}`}>
           {isOpen && (
             <>
-              <div className="submenu-option"><Link to="/listmenu" style={{ textDecoration: "none", color: "inherit" }}>List Category</Link></div>
-              <div className="submenu-option"><Link to="/Addmenu" style={{ textDecoration: "none", color: "inherit" }}>Add Category</Link></div>
+              <div className="submenu-option"><Link to="/listcategory" style={{ textDecoration: "none", color: "inherit" }}>List Category</Link></div>
+              <div className="submenu-option"><Link to="/addcategory" style={{ textDecoration: "none", color: "inherit" }}>Add Category</Link></div>
             </>
           )}
         </div>
@@ -111,8 +111,8 @@ const Sidebar = ({ onToggle }) => {
         <div className={`submenu ${dineintableOpen ? "open" : ""}`}>
           {isOpen && (
             <>
-              <div className="submenu-option"><Link to="/listmenu" style={{ textDecoration: "none", color: "inherit" }}>List Table</Link></div>
-              <div className="submenu-option"><Link to="/Addmenu" style={{ textDecoration: "none", color: "inherit" }}>Add Table</Link></div>
+              <div className="submenu-option"><Link to="/listtable" style={{ textDecoration: "none", color: "inherit" }}>List Table</Link></div>
+              <div className="submenu-option"><Link to="/addtable" style={{ textDecoration: "none", color: "inherit" }}>Add Table</Link></div>
             </>
           )}
         </div>
@@ -127,8 +127,8 @@ const Sidebar = ({ onToggle }) => {
         <div className={`submenu ${peopleOpen ? "open" : ""}`}>
           {isOpen && (
             <>
-              <div className="submenu-option"><Link to="/listmenu" style={{ textDecoration: "none", color: "inherit" }}>User</Link></div>
-              <div className="submenu-option"><Link to="/Addmenu" style={{ textDecoration: "none", color: "inherit" }}>Add User</Link></div>
+              <div className="submenu-option"><Link to="/users" style={{ textDecoration: "none", color: "inherit" }}>User</Link></div>
+              <div className="submenu-option"><Link to="/adduser" style={{ textDecoration: "none", color: "inherit" }}>Add User</Link></div>
             </>
           )}
         </div>

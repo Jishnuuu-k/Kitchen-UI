@@ -54,23 +54,15 @@ function Addmenu({ sidebarWidth }) {
                   <label  className="label">Tax value (in percentage %) :</label>
                   <input type="text" className="input" placeholder='Enter name'/>
                 </div>
-                <div className="Dataentry-box">
-                  <label  className="label">Description / Product Details :</label>
-                  <input type="text" className="input" placeholder='Enter name'/>
+                <div className="form-groupfull-width">
+                  <label className="label">Description / Product Details</label>
+                  <textarea className="textarea"></textarea>
                 </div>
-                <div className="Dataentry-box">
-                  <label  className="label">Description / Product Details :</label>
-                  <input type="text" className="input" placeholder='Enter name'/>
+
+                <div className="Biinputforitems">
+                  <button className="Btnfor-addons">Add Item</button>
+                  <button className="Btnfor-addonss">Reset</button>
                 </div>
-                <div className="Dataentry-box">
-                  <label  className="label">Description / Product Details :</label>
-                  <input type="text" className="input" placeholder='Enter name'/>
-                </div>
-                <div className="Dataentry-box">
-                  <label  className="label">Description / Product Details :</label>
-                  <input type="text" className="input" placeholder='Enter name'/>
-                </div>
-                
               </form>
             </div>
           </div>
