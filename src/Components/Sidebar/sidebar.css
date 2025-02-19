@@ -1,136 +1,211 @@
 .sidebar {
   width: 250px;
-  background-color: #fff;
   transition: width 0.3s ease-in-out;
   position: fixed;
   left: 0;
   top: 0;
+  bottom: 0;
+  background-color: #fff;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-}
-.sidebar.closed {
-  width: 50px;
+  z-index: 1000;
+  overflow-y: auto; /* Add scrolling for smaller screens */
 }
 
-/* --- TOP SECTION --- */
+.sidebar.closed {
+  width: 60px;
+  overflow-x: hidden; /* Prevent horizontal scrolling when collapsed */
+}
+
 .top-section {
-  height: 60px;
-  width: 100%;
+  height: 50px;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f9f9f9; /* Subtle background to highlight header */
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.logo {
-  font-size: 22px;
-  color: #32BDEA;
-  white-space: nowrap; 
+  gap: 10px; /* More consistent spacing */
 }
 
 .Cup-icon {
   font-size: 25px;
-  color: rgb(75, 187, 224);
+  color: #32BDEA; /* Match logo color */
+  min-width: 25px; /* Prevent icon from shrinking */
+}
+
+.logo {
+  font-size: 20px;
+  color: #32BDEA;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 .menu-icon {
-  font-size: 24px;
-  color: black;
+  font-size: 20px;
   cursor: pointer;
+  color: #555;
+  transition: color 0.2s;
 }
 
-/* Hide logo when sidebar is closed */
-.sidebar.closed .logo-container {
-  display: none;
+.menu-icon:hover {
+  color: #32BDEA;
 }
 
-/* --- MENU STYLING --- */
 .menu {
-  list-style: none;
-  padding: 0;
-  height: 99vh;
-  width: 100%;
+  padding-top: 10px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  gap: 2px; /* Reduced gap for tighter menu */
 }
+
+/* Fix link styling to remove default underline */
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Make entire area clickable */
+}
+
 .menu-options {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  height: 50px;
-  width: 85%;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-  transition: background 0.3s, color 0.3s;
-  cursor: pointer;
-  color: grey;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: white;
-  flex-shrink: 0;
-}
-
-.menu-options:hover {
-  color: black;
-}
-
-/* Submenu Styling */
-.submenu {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  gap: 5px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-}
-
-.submenu-option {
   height: 40px;
   display: flex;
   align-items: center;
-  color: grey;
+  padding: 10px 15px;
   cursor: pointer;
-  padding-left: 30px;
-  transition: 0.3s;
+  color: #666;
+  transition: all 0.2s ease;
+  margin-right: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative; /* For active indicator */
 }
 
-.submenu-option:hover {
-  color: black;
+.menu-options:hover {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(164, 164, 164, 0.184) -3px -3px 6px 1px inset;
+  color: #32BDEA; /* Use theme color on hover */
 }
 
-/* Show submenu when open */
-.submenu.open {
-  max-height: 150px;
+.menu-options.active {
+  background-color: rgba(50, 189, 234, 0.1); /* Subtle active background */
+  color: #32BDEA;
+  font-weight: 500;
 }
 
-/* Icon Styling */
-.menu-options .icon {
-  font-size: 20px;
-  margin-right: 15px;
-}
-
-.sidebar.closed .menu-options span {
+.submenu {
   display: none;
-  text-decoration: none;
+  flex-direction: column;
+  padding: 5px 0; /* Add some vertical padding */
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 8px;
+  background-color: #f8f8f8; /* Subtle background */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05); /* More subtle shadow */
 }
 
-/* Arrow Icon Rotation */
+.submenu.open {
+  display: flex;
+  animation: fadeIn 0.3s ease; /* Smooth fade-in animation */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.submenu a,
+.submenu-option {
+  padding: 8px 15px;
+  color: #777;
+  text-decoration: none !important; /* Explicitly prevent underline */
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  margin: 2px 5px;
+}
+
+.submenu a:hover,
+.submenu-option:hover {
+  color: #32BDEA;
+  background-color: rgba(50, 189, 234, 0.05);
+}
+
+.nested-submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 15px;
+  margin-top: 2px;
+}
+
+.nested-submenu.open {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+.icon {
+  font-size: 18px; /* Slightly smaller for better proportion */
+  min-width: 24px; /* Fixed width to maintain alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  color: #666; /* Match text color */
+  transition: color 0.2s;
+}
+
+/* Important fix for collapsed sidebar */
+.sidebar.closed .icon {
+  font-size: 18px; /* Keep size consistent */
+  margin-right: 0;
+  margin-left: 5px; /* Center icon when collapsed */
+}
+
+.menu-options:hover .icon {
+  color: #32BDEA; /* Change icon color on hover */
+}
+
 .arrow-icon {
-  font-size: 18px;
-  margin-left: 70px;
+  font-size: 14px;
+  margin-left: auto;
   transition: transform 0.3s ease-in-out;
+  opacity: 0.7; /* Make arrows slightly more subtle */
 }
 
 .arrow-icon.rotated {
   transform: rotate(90deg);
+}
+
+/* Center icons when sidebar is collapsed */
+.sidebar.closed .menu-options {
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.sidebar.closed .menu-options span,
+.sidebar.closed .submenu,
+.sidebar.closed .nested-submenu,
+.sidebar.closed .arrow-icon {
+  display: none;
+}
+
+/* Add tooltip for collapsed sidebar */
+.sidebar.closed .menu-options:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 60px;
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 100;
 }
