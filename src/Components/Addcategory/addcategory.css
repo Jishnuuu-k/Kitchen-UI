@@ -1,17 +1,17 @@
 .MainCategoryContainer {
     margin-left: 250px;
-    padding: 0;
-    height: 750px;
     width: 82vw;
+    height: 750px;
+    padding: 0;
     background-color: white;
     transition: width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
 }
 
 .CategoryContentBox {
-    height: 600px;
     width: 100%;
+    height: 600px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -19,26 +19,27 @@
     width: 80%;
     border: 1px solid grey;
     border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
 .CategoryFormHeading {
-    height: 90px;
     width: 100%;
-    border-bottom: 1px solid grey;
+    height: 90px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    border-bottom: 1px solid grey;
 }
 
 .CategoryFormHeading h2 {
-    margin-left: 47px;
+    margin-left: 40px;
     color: grey;
 }
 
 .CategoryFormData {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -46,64 +47,67 @@
     width: 90%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     margin-top: 10px;
 }
 
 .CategoryInput {
-    height: 120px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
-}
-
-.CategoryButtonGroup {
-    height: 100%;
-    width: 100%;
+    gap: 10px;
 }
 
 .CategoryInput label {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .CategoryInputBox {
+    width: 100%;
     height: 50px;
-    border-radius: 10px;
     border: 1px solid grey;
-}
-.Categoryinputboxx-wrapper{
-    height: 50px;
     border-radius: 10px;
+    padding: 10px;
+}
+
+.Categoryinputboxx-wrapper {
+    width: 100%;
+    height: 50px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
 }
-.CategoryInputBoxx{
-    height: 20px;
+
+.CategoryInputBoxx {
     width: auto;
-    margin-left: 10px;
+    border: none;
+}
+
+.CategoryButtonGroup {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.CategoryAddButton,
+.CategoryResetButton {
+    height: 40px;
+    width: 130px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
 }
 
 .CategoryAddButton {
-    height: 40px;
-    width: 120px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: #32BDEA;
-    color: white;
-    font-size: 15px;
+    background-color: #32bdea;
 }
 
 .CategoryResetButton {
-    height: 40px;
-    width: 120px;
     background-color: rgb(246, 131, 150);
-    color: white;
-    font-size: 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-left: 15px;
 }

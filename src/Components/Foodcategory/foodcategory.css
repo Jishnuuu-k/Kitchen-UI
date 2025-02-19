@@ -16,18 +16,28 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-    overflow-y: hidden;
-    overflow-x: auto;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.listcategory-entries{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+
 }
 .listcategory-entries label{
-    width: 200px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 5px;
+    white-space: nowrap;  
 }
 .listcategory-entries select {
-    padding: 5px;
+    margin-top: 10px;
+    height: 35px;
     border-radius: 5px;
+    border: 1px solid #ccc;
+  
 }
   
 .listcategory-add-btn {
@@ -36,6 +46,10 @@
     border: none;
     padding: 8px 12px;
     cursor: pointer;
+    white-space: nowrap;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  
 }
   
 .listcategory-search {
